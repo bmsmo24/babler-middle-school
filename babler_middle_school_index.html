@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Babler Middle School</title>
+  <meta name="description" content="Welcome to the official site of Babler Middle School — home of the Bobcats." />
+  <style>
+    :root{
+      --brand:#2b6cb0; /* blue */
+      --accent:#f6ad55; /* orange */
+      --muted:#6b7280;
+      --bg:#f8fafc;
+      --card:#ffffff;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.45}
+    header{background:linear-gradient(90deg,var(--brand),#2563eb);color:#fff;padding:18px 24px}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    .top{display:flex;align-items:center;gap:16px}
+    .logo{width:72px;height:72px;border-radius:8px;background:#fff22a;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--brand);font-size:22px}
+    nav{margin-left:auto}
+    nav a{color:rgba(255,255,255,0.95);margin-left:14px;text-decoration:none;font-weight:600}
+    .hero{display:flex;gap:24px;align-items:center;padding:36px 0}
+    .hero h1{margin:0;font-size:34px}
+    .hero p{color:var(--bg);opacity:0.95;margin-top:8px}
+    .card{background:var(--card);border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.06);padding:18px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .announcements li{padding:10px 0;border-bottom:1px solid #eef2f7}
+    .announcements li:last-child{border-bottom:0}
+    .events{display:flex;flex-direction:column;gap:8px}
+    .staff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .staff{display:flex;gap:12px;align-items:center}
+    .avatar{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--brand),#7dd3fc);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    footer{padding:28px 0;color:var(--muted)}
+    .small{font-size:13px;color:var(--muted)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--brand);color:#fff;text-decoration:none;font-weight:700}
+    @media (max-width:900px){.grid{grid-template-columns:1fr;}.staff-grid{grid-template-columns:1fr;}.hero{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container top">
+      <div class="logo" aria-hidden>BB</div>
+      <div>
+        <div style="font-weight:700">Babler Middle School</div>
+        <div class="small">Home of the Bobcats • Fictional sample site</div>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#staff">Staff</a>
+        <a href="#calendar">Calendar</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="home">
+      <div style="flex:1">
+        <h1>Welcome to Babler Middle School</h1>
+        <p style="color:var(--muted);max-width:60%">Babler Middle School is committed to academic excellence, social-emotional growth, and creating a welcoming community for all students in grades 6–8. Explore news, events, and resources below.</p>
+        <p style="margin-top:14px"><a class="btn" href="#calendar">View Calendar</a></p>
+      </div>
+      <div style="width:360px">
+        <div class="card">
+          <h3 style="margin-top:0">Today's Highlights</h3>
+          <ul class="small" style="margin:0;padding-left:14px">
+            <li>Cross-Country Meet — 3:30 PM</li>
+            <li>Drama Club Rehearsal — 4:00 PM</li>
+            <li>Parent-Teacher Conferences — Oct 2</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:20px">
+      <div class="grid">
+        <div class="card">
+          <h3 style="margin-top:0">Latest Announcements</h3>
+          <ul class="announcements" style="list-style:none;margin:0;padding:0">
+            <li><strong>9/20/2025</strong> — School picture day moved to Sept 25.</li>
+            <li><strong>9/18/2025</strong> — New after-school tutoring program starts next week.</li>
+            <li><strong>9/12/2025</strong> — Cafeteria menu updated (vegetarian options added).</li>
+          </ul>
+          <p style="margin-top:12px"><a href="#" class="small">View all announcements →</a></p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0">Upcoming Events</h3>
+          <div class="events small">
+            <div><strong>Sept 25</strong> — Picture Day</div>
+            <div><strong>Oct 2</strong> — Parent-Teacher Conferences</div>
+            <div><strong>Oct 15</strong> — Fall Band Concert</div>
+          </div>
+          <p style="margin-top:12px"><a href="#calendar" class="small">Full calendar →</a></p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0">Quick Links</h3>
+          <ul class="small" style="margin:0;padding-left:14px">
+            <li><a href="#" class="small">Student Portal</a></li>
+            <li><a href="#" class="small">Staff Directory</a></li>
+            <li><a href="#" class="small">Lunch Menus</a></li>
+            <li><a href="#" class="small">Transportation</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:22px">
+      <div class="card">
+        <h2 style="margin-top:0">About Babler</h2>
+        <p class="small">Babler Middle School serves approximately 700 students in grades 6–8. Our mission is to challenge students academically while supporting their emotional and social development. The school offers a robust set of extracurricular activities including athletics, arts, and academic clubs.</p>
+        <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
+          <div class="card small" style="flex:1;min-width:220px">Academic Programs<br><strong>STEM, Language Arts, Social Studies</strong></div>
+          <div class="card small" style="flex:1;min-width:220px">Student Support<br><strong>Counseling & Tutoring</strong></div>
+          <div class="card small" style="flex:1;min-width:220px">Activities<br><strong>Robotics, Band, Sports</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="staff" style="margin-top:22px">
+      <h2>Meet Our Staff</h2>
+      <div class="staff-grid" style="margin-top:10px">
+        <div class="card staff small">
+          <div class="avatar">JS</div>
+          <div>
+            <div style="font-weight:700">Jessica Soto</div>
+            <div class="small">Principal</div>
+          </div>
+        </div>
+        <div class="card staff small">
+          <div class="avatar">MB</div>
+          <div>
+            <div style="font-weight:700">Marcus Brown</div>
+            <div class="small">Counselor</div>
+          </div>
+        </div>
+        <div class="card staff small">
+          <div class="avatar">AL</div>
+          <div>
+            <div style="font-weight:700">Ava Lee</div>
+            <div class="small">Math Department</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="calendar" style="margin-top:22px">
+      <div class="card">
+        <h2 style="margin-top:0">School Calendar (Select Months)</h2>
+        <p class="small">Use the district calendar for full-year schedules. Below are quick highlights for the current month.</p>
+        <table style="width:100%;border-collapse:collapse;margin-top:10px" class="small">
+          <thead>
+            <tr style="text-align:left;color:var(--muted)"><th>Date</th><th>Event</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Sept 25, 2025</td><td>Picture Day</td></tr>
+            <tr><td>Oct 2, 2025</td><td>Parent-Teacher Conferences</td></tr>
+            <tr><td>Oct 15, 2025</td><td>Fall Band Concert</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:22px">
+      <div class="card">
+        <h2 style="margin-top:0">Contact Us</h2>
+        <form class="small" onsubmit="event.preventDefault();alert('This is a demo page — form not functional.')">
+          <label style="display:block;margin-bottom:8px">Name<br><input style="width:100%;padding:8px;margin-top:6px;border-radius:6px;border:1px solid #e6edf3" required></label>
+          <label style="display:block;margin-bottom:8px">Email<br><input type="email" style="width:100%;padding:8px;margin-top:6px;border-radius:6px;border:1px solid #e6edf3" required></label>
+          <label style="display:block;margin-bottom:8px">Message<br><textarea style="width:100%;padding:8px;margin-top:6px;border-radius:6px;border:1px solid #e6edf3" rows="4" required></textarea></label>
+          <p><button class="btn">Send Message</button></p>
+        </form>
+        <div class="small" style="margin-top:6px">Main office: (555) 013-2025 • 1234 Sample Lane • Somewhere, ST</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div class="small">© 2025 Babler Middle School • This is a fictional site created for demonstration purposes.</div>
+        <div class="small">Site design by ChatGPT</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
